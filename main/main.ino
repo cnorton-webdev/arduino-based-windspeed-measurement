@@ -29,8 +29,8 @@ void calculateSpeed() {
 
   double rpm = 60.0 / elapsed_seconds; // Revolutions Per Minute
 
-  // Circumference in cm of object with magnet attached
-  double distance = rpm * 22.0;
+  // Diameter in cm of object with magnet attached to be read by hall effect sensor
+  double distance = rpm * 2;
 
   double speed = distance; // Speed in units per minute (e.g., cm/min)
 
